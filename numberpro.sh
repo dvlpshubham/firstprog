@@ -1,27 +1,36 @@
 #! /bin/bash -x
 
-isValue=true
-#1)
-if [ #check condition ]
-then
-        #body
-fi
+read -p "Enter the day number: " dayNumber
 
-#2)
-if [ #check condition ]
-then
-        #body of if
-else
-        #body of else
-fi
+#-eq means equal to
+#-ne means not equal to
+#-lt menas less than
+#-gt means greater than
+#-ge means greater than or equal to
+#-le menas less than or equal to
 
-#3)
-if [ #check condition ]
+
+if [ $dayNumber -eq 1 ]
 then
-        #body of if
-elif [ #second check condition ]
+        echo "Monday"
+elif [ $dayNumber -eq 2 ]
 then
-        #body of else if
+        echo "Tuesday"
+elif [ $dayNumber -eq 3 ]
+then
+        echo "Wednesday"
+elif [ $dayNumber -eq 4 ]
+then
+        echo "Thusday"
+elif [ $dayNumber -eq 5 ]
+then
+        echo "Friday"
+elif [ $dayNumber -eq 6 ]
+then
+        echo "Saturday"
+elif [ $dayNumber -eq 7 ]
+then
+        echo "Sunday"
 else
-        #body of second else
+        echo "Enter the correct day number"
 fi
